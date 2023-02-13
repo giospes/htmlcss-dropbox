@@ -1,9 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
 
+:root{
+    --main-bg-color: white;
+    --header-bg-color: rgb(180, 208, 231);
+    --btn-bg-color: rgb(0, 97, 255);
+}
+
+/* utilities */
+.debug{
+    border: 1px solid black;
+}
+
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+/* general layout ans styling */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    color: black;
 }
 
 body{
@@ -20,21 +48,40 @@ body{
     margin: 0 auto;
 }
 
-.debug{
-    border: 1px solid black;
-}
-
-nav{
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-}
-
 h1{
     margin-top: 50px;
 }
 
+.header-btn{
+    padding: 0 .8em;
+}
 .btm-margin{
     margin-bottom: 50px;
+}
+
+.btn-blue{
+    background-color: var(--btn-bg-color);
+    color: var(--main-bg-color);
+}
+
+
+/* section layout and styling */
+
+/* nav styling */
+nav{
+    height: 50px;
+    width: 100%;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 100;
+}
+
+nav div{
+    gap: 25px;
+}
+
+nav a{
+    line-height: 25px;
+    font-weight: 300;
+    font-size: .8rem;
 }
