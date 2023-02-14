@@ -42,12 +42,12 @@ body{
 }
 
 .container-big{
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .container-small{
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
@@ -273,10 +273,11 @@ label{
 
 /* section 2 styling */
 #partner{
-    gap: 2rem;
+    gap: 3rem;
+    margin-bottom: 12rem;
 }
 #partner img{
-    width: calc(100% - 35% - 2rem);
+    width: calc(100% - 35% - 3rem);
 }
 
 .partner-text{
@@ -293,10 +294,33 @@ label{
    font-weight: 300;
    font-size: .9rem;
    line-height: 1.2rem;
-   margin-bottom: 2rem;
 }
 
 .partner-text a{
     border: 1px solid black;
     padding: .5rem .7rem;
+}
+
+/* section 3 styling */
+
+#operation ul{
+    gap: 4rem 2rem ;
+}
+
+#operation .card-vertical img{
+    width: 100%;
+}
+
+#operation h2{
+    font-size: 2rem;
+    margin-bottom: 3rem; 
+}
+
+#operation h3{
+    font-size: 1.3rem;
+    margin-bottom: 2rem; 
+}
+
+#operation p{
+    line-height: 1.2rem;
 }
