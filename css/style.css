@@ -329,9 +329,8 @@ label{
     line-height: 1.2rem;
 }
 
+
 /* section 4 styling */
-
-
 .square-container{
     width: calc(100% / 3);
     height: calc(100vw / 3); ;
@@ -436,4 +435,78 @@ label{
     font-weight: 300;
     font-size: .8rem;
     padding: .6rem 2.5rem;
+}
+
+
+/* section 5 styling */
+#domande-frequenti h2{
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.question{
+    padding: 2rem 0;
+}
+
+.question h4{
+    display: inline-block;
+    margin-right: 17rem;
+}
+
+.answer{
+    display: none;
+}
+
+.question:hover .answer{
+    margin-top: 2rem;
+    display: block;
+}
+
+.question i{
+    transform: translate(0deg);
+    transition: transform .2s ease-in-out;
+}
+
+.question:hover i{
+    transform: rotate(90deg);
+}
+
+footer{
+    background-color: black; 
+}
+
+footer>ul{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+footer>ul h4{
+    font-size: 1.2rem;
+    color: white; 
+    margin-bottom: 1.5rem;
+}
+
+footer a{
+    display: inline-block;
+    color: white; 
+    font-size: .8rem;
+    margin-bottom: .7rem;
+}
+
+footer hr{
+    width: 15%;
+    margin-bottom: 2rem;
+}
+
+footer i{
+    color: white;   
+}
+
+footer select{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: .7rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
 }
