@@ -187,6 +187,7 @@ label{
 
 .card-vertical{
     width: calc((100% / 3) - 2rem);
+    height: 815px;
 }
 
 .card-horizontal{
@@ -215,6 +216,14 @@ label{
     font-weight: 300;
 }
 
+.features li i{
+    width: 10%;
+}
+
+.features li span{
+    width: 90%;
+}
+
 .card-btn{
     display: inline-block;
     height: 1.8rem;
@@ -241,15 +250,14 @@ label{
     margin-bottom: 1.5rem;
 }
 
-.punti-salienti li::before{
-    content: "✓";
-    padding-right: .3rem;
+.punti-salienti i{
+    width: 10%;
     color: var(--btn-bg-color);
-    font-weight: 800;
 }
 
-.punti-salienti li{
+.ticked{
     margin-bottom: 1rem;
+    width: 90%;
 }
 
 .horizontal-text{
@@ -297,8 +305,10 @@ label{
 }
 
 .partner-text a{
+    display: inline-block;
     border: 1px solid black;
     padding: .5rem .7rem;
+    margin-top: 2rem;
 }
 
 /* section 3 styling */
