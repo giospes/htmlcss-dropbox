@@ -85,14 +85,29 @@ nav{
     background-color: var(--main-bg-color);
 }
 
-nav div{
+nav>div, .effect-btm{
     gap: 25px;
 }
 
+.effect-btm{
+    height: 50px;
+}
+
+.effect-btm a{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;  
+}
+
 nav a{
+    position: relative;
     line-height: 25px;
     font-weight: 300;
     font-size: .8rem;
+}
+
+nav a:hover{
+    border-bottom: 5px solid var(--btn-bg-color) ;
 }
 
 /* jumbotron styling */
